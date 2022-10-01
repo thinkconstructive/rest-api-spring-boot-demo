@@ -4,7 +4,12 @@ spring:
     username: root
     password: dummy
 
-# The SQL dialect makes Hibernate generate better SQL for the chosen database
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+
+  # The SQL dialect makes Hibernate generate better SQL for the chosen database
   jpa:
     properties:
       hibernate:
