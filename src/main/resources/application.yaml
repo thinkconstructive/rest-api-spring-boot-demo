@@ -17,3 +17,23 @@ spring:
 
 #JPA Settings
   jpa.hibernate.ddl_auto: create
+
+
+
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health, beans, metrics"
+      base-path: "/management-dashboard"
+  endpoint:
+    health:
+      show-details: always
+
+dummyService:
+  port: 8081
+  address: 127.0.0.1
